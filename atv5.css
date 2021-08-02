@@ -7,5 +7,11 @@
   background-color: aqua;
 }
 .orcs {
-  color: greenyellow;
+  color: rgb(138, 253, 138);
+}
+.tesouro {
+  color: gold;
+}
+.machado {
+  font-size: 0px;
 }
