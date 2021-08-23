@@ -481,7 +481,9 @@
     </tr>
 
   </table>
+
   <script>
+
     const celulas = document.querySelectorAll('th');
 
     for (let i = 0; i < celulas.length - 1; i++) {
@@ -491,6 +493,7 @@
       if (!celulas[i].className) {
         celulas[i].classList.add('parede');
       }
+
     }
     function clicando(event) {
       let target = event.target
@@ -511,9 +514,12 @@
         target.classList.remove('tesouro');
         target.classList.add('parede');
       }
+
       console.log("A celula possui nova classe apos mudanças: " + target.className);
+
     }
   </script>
+
 </body>
 
 </html>
