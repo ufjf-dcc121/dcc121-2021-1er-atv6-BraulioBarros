@@ -486,8 +486,18 @@
 
     for (let i = 0; i < celulas.length - 1; i++) {
 
-    }
+      celulas[i].addEventListener('click', clicando, false);
 
+      if (!celulas[i].className) {
+        celulas[i].classList.add('parede');
+      }
+    }
+    function clicando(event) {
+      let target = event.target
+
+      console.log("A celula possui a classe: " + target.className);
+
+    }
   </script>
 </body>
 
