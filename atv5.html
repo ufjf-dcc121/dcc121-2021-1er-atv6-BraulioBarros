@@ -497,6 +497,20 @@
 
       console.log("A celula possui a classe: " + target.className);
 
+      if (target.className = 'parede') {
+        target.classList.remove('parede');
+      }
+      if (!target.className) {
+        target.classList.add('orc');
+      }
+      if (target.className = 'orc') {
+        target.classList.remove('orc');
+        target.classList.add('tesouro');
+      }
+      if (target.className = 'tesouro') {
+        target.classList.remove('tesouro');
+        target.classList.add('parede');
+      }
     }
   </script>
 </body>
